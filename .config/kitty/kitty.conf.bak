@@ -1,0 +1,85 @@
+# ================================
+# FONTE E LEGIBILIDADE
+# ================================
+font_family      FiraCode Nerd Font
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size        13.5
+enable_ligatures yes
+adjust_line_height 100%
+adjust_column_width 100%
+
+# ================================
+# CORES - TEMA
+# ================================
+# include ./kitty-themes/themes/Tokyo Night Storm.conf
+# Você pode substituir por:
+include ./kitty-themes/themes/Dracula.conf
+# include ./kitty-themes/themes/Gruvbox Dark.conf
+
+# ================================
+# APARÊNCIA E ESPAÇAMENTO
+# ================================
+window_padding_width 10 10
+background_opacity 0.90
+cursor_shape      underline
+cursor_blink_interval 0.6
+hide_window_decorations yes
+inactive_text_alpha 0.8
+confirm_os_window_close 0
+placement_strategy center
+
+# ================================
+# DESEMPENHO E RENDERIZAÇÃO
+# ================================
+repaint_delay     10
+input_delay       2
+sync_to_monitor   yes
+enable_audio_bell no
+detect_urls       yes
+
+# ================================
+# SCROLL E HISTÓRICO
+# ================================
+scrollback_lines 10000
+wheel_scroll_multiplier 5.0
+scrollback_pager kitty +kitten less
+
+# ================================
+# ATALHOS DE TECLADO (SPLITS / LAYOUTS)
+# ================================
+
+# Abrir nova janela no split horizontal ou vertical
+map ctrl+shift+enter    launch --cwd=current
+map ctrl+shift+h        launch --cwd=current --location=hsplit
+map ctrl+shift+v        launch --cwd=current --location=vsplit
+
+# Navegar entre janelas com Ctrl+Shift+Setas
+map ctrl+shift+left     neighboring_window left
+map ctrl+shift+right    neighboring_window right
+map ctrl+shift+up       neighboring_window up
+map ctrl+shift+down     neighboring_window down
+
+# Fechar janela atual
+map ctrl+shift+q        close_window
+
+# ================================
+# KITTENS
+# ================================
+# SSH interativo
+map ctrl+shift+s        kitten ssh
+
+# ================================
+# COMPORTAMENTO DE LINKS
+# ================================
+open_url_with default
+# url_color #89b4fa
+url_style dotted
+
+# ================================
+# CUSTOMIZAÇÃO AVANÇADA
+# ================================
+allow_remote_control yes
+update_check_interval 0
+shell_integration enabled
